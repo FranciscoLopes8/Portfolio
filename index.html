@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Lopes</title>
+  <meta name="description" content="Francisco Lopes — software engineer building distributed systems, blockchains and full-stack apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%233a5a40'/><text x='50' y='52' font-family='monospace' font-size='46' font-weight='bold' fill='%23fbfbf9' text-anchor='middle' dominant-baseline='central'>FL</text></svg>" />
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+    <span class="theme-icon-sun">☀</span>
+    <span class="theme-icon-moon">☾</span>
+  </button>
+
+  <main>
+    <!-- Hero -->
+    <header class="hero">
+      <div class="avatar">
+        <img src="assets/profile.jpg" alt="Francisco Lopes"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+        <span class="avatar-fallback" style="display:none" aria-hidden="true">FL</span>
+      </div>
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Francisco Lopes</h1>
+      <p class="tagline">
+        Software engineer with a soft spot for <em>distributed systems</em>,
+        <em>blockchains</em> and building things end&#8209;to&#8209;end.
+      </p>
+      <p class="intro">
+        I like problems where correctness actually matters — consensus, cryptography,
+        systems that have to agree with each other across a network. Below are a few
+        projects I've been working on. <span class="hint">Click any card to dig into it.</span>
+      </p>
+      <nav class="socials">
+        <a href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">·</span>
+        <a href="mailto:franciscodl2004@gmail.com">Email</a>
+        <span class="dot">·</span>
+        <a href="#about">About</a>
+        <span class="dot">·</span>
+        <a href="#projects">Projects</a>
+      </nav>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="resume.pdf" download="Francisco_Lopes_CV.pdf">Download résumé ↓</a>
+        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">View résumé ↗</a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <p class="about-text">
+        I'm a software engineering student and developer from Portugal, drawn to the
+        systems side of the field — the layers where data has to move reliably between
+        machines and stay correct under failure. Most of my recent work sits at the
+        intersection of distributed systems and blockchain: consensus, hashing, and
+        the plumbing that keeps independent nodes in agreement. I like building the
+        whole thing, from the smart contract or storage node up to the interface a
+        person actually touches.
+      </p>
+
+      <div class="skills">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul class="tags">
+            <li>Java</li>
+            <li>Rust</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Solidity</li>
+            <li>Erlang</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Distributed &amp; Backend</h4>
+          <ul class="tags">
+            <li>gRPC / protobuf</li>
+            <li>RxJava</li>
+            <li>ZeroMQ</li>
+            <li>Consistent hashing</li>
+            <li>Raft</li>
+            <li>Node.js / Express</li>
+            <li>MongoDB</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Blockchain</h4>
+          <ul class="tags">
+            <li>Ethereum</li>
+            <li>Smart contracts</li>
+            <li>ethers.js</li>
+            <li>Truffle / Ganache</li>
+            <li>Cryptography</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend &amp; Tooling</h4>
+          <ul class="tags">
+            <li>React Native / Expo</li>
+            <li>NativeWind / Tailwind</li>
+            <li>Git</li>
+            <li>Maven</li>
+            <li>Docker</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <!-- ============ VOTIUM ============ -->
+      <article class="card" data-project="votium" tabindex="0" role="button" aria-label="Open details for Votium">
+        <div class="card-head">
+          <h3>Votium</h3>
+          <span class="status status-live">Full-stack</span>
+        </div>
+        <p class="card-desc">
+          A decentralized e-voting platform that stores ballots immutably on the
+          Ethereum blockchain. Voter codes are hashed with <code>keccak256</code> before
+          going on-chain, double-votes are blocked at the contract level, and the whole
+          thing runs cross-platform from a single Expo codebase.
+        </p>
+        <ul class="tags">
+          <li>React Native / Expo</li>
+          <li>TypeScript</li>
+          <li>Solidity</li>
+          <li>Ethereum</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+        </ul>
+        <div class="card-foot">
+          <span class="read-more">Read more →</span>
+          <a class="code-link" href="https://github.com/FranciscoLopes8/Votium" target="_blank" rel="noopener">View code ↗</a>
+        </div>
+
+        <template class="detail">
+          <p class="detail-lead">
+            Votium is a full-stack decentralized voting platform that combines the
+            transparency of the Ethereum blockchain with the accessibility of a
+            cross-platform mobile app. Authorized users can create elections, register
+            candidates and cast votes — every ballot is written immutably on-chain, so
+            results are publicly auditable and tamper-proof.
+          </p>
+
+          <h4>Architecture</h4>
+          <pre class="diagram">┌─────────────────────────────────────────────┐
+│            Mobile App (Expo / RN)           │
+│      TypeScript · NativeWind · expo-router  │
+└───────────────────┬─────────────────────────┘
+                    │  HTTPS REST
+                    ▼
+┌─────────────────────────────────────────────┐
+│               Backend (Node.js)             │
+│   Express · JWT auth · Multer · rate limit  │
+│        ┌─────────────┴─────────────┐        │
+│        ▼                           ▼        │
+│  MongoDB (Mongoose)        Ethereum network │
+│  users · candidates        ethers.js · HD   │
+│  off-chain metadata        wallet provider  │
+└───────────────────┬─────────────────────────┘
+                    ▼
+┌─────────────────────────────────────────────┐
+│          Solidity Smart Contract (Voto)     │
+│   keccak256 hashing · mapping-based dedup   │
+│   VotoRegistado event · immutable ballots   │
+└─────────────────────────────────────────────┘</pre>
+
+          <h4>How it stays secure</h4>
+          <ul class="detail-list">
+            <li><strong>Cryptographic privacy</strong> — voter codes are hashed with <code>keccak256</code> before on-chain storage; a vote can't be linked to an identity without the personal code.</li>
+            <li><strong>Double-vote prevention</strong> — enforced in the contract via <code>mapping(address =&gt; bool)</code> plus personal-code uniqueness checks.</li>
+            <li><strong>Hardened backend</strong> — JWT in HttpOnly cookies, brute-force rate limiting (5 req / 15 min), HTTPS, and on-device SecureStore for tokens.</li>
+            <li><strong>Role-based access</strong> — separate Admin and User permissions (only admins can see live vote statistics).</li>
+          </ul>
+
+          <h4>Notable</h4>
+          <p>The backend was prototyped and stress-tested on a <strong>Raspberry Pi 3B</strong> (ARM Cortex-A53, 1&nbsp;GB RAM) to validate behaviour under constrained hardware.</p>
+
+          <h4>Stack</h4>
+          <ul class="tags">
+            <li>React Native 0.79 / Expo 53</li>
+            <li>TypeScript 5.8</li>
+            <li>expo-router</li>
+            <li>NativeWind</li>
+            <li>Express 4</li>
+            <li>MongoDB / Mongoose 8</li>
+            <li>JWT + bcryptjs</li>
+            <li>Solidity ^0.8.13</li>
+            <li>ethers.js v5</li>
+            <li>Truffle + Ganache</li>
+          </ul>
+        </template>
+      </article>
+
+      <!-- ============ TIMESERIES ============ -->
+      <article class="card" data-project="timeseries" tabindex="0" role="button" aria-label="Open details for TimeSeriesDistributedService">
+        <div class="card-head">
+          <h3>TimeSeriesDistributedService</h3>
+          <span class="status status-live">Distributed systems</span>
+        </div>
+        <p class="card-desc">
+          A distributed time-series service that spreads events across a DHT using
+          consistent hashing and answers aggregation queries over the cluster. Java nodes
+          talk over gRPC with RxJava and protobuf, Erlang handles coordination, and a
+          Python suite runs performance and chaos tests against it.
+        </p>
+        <ul class="tags">
+          <li>Java</li>
+          <li>gRPC / protobuf</li>
+          <li>RxJava</li>
+          <li>Erlang</li>
+          <li>Consistent hashing</li>
+          <li>ZeroMQ</li>
+        </ul>
+        <div class="card-foot">
+          <span class="read-more">Read more →</span>
+          <a class="code-link" href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">View code ↗</a>
+        </div>
+
+        <template class="detail">
+          <p class="detail-lead">
+            A distributed system for storing and aggregating time-series events. Events
+            are partitioned across a ring of storage nodes (the <strong>AST</strong>) using
+            consistent hashing, and an aggregation server (the <strong>SA</strong>) fetches
+            the relevant events and computes results — with an in-memory cache so repeated
+            queries are near-instant.
+          </p>
+
+          <h4>Architecture</h4>
+          <pre class="diagram">SSSimulator (Dealer)
+     │  ZMQ
+     ▼
+  SARouter ──► AggregationService ──► ASTClient
+                 │        ▲              │ gRPC (RxJava + protobuf)
+              cache     engine          ▼
+             (memory) (COUNT/SUM…) FetchEventsHandler
+                                        │
+                                    ASTService
+                                   (DHT routing)
+                                        │
+                                   EventStorage
+                                    (CSV / day)</pre>
+
+          <h4>How it works</h4>
+          <ul class="detail-list">
+            <li><strong>Consistent-hashing ring</strong> — a <code>ConsistentHashRing</code> with 150 virtual nodes decides which AST node owns each day of data; adding/removing nodes only reshuffles a slice of the keyspace.</li>
+            <li><strong>gRPC transport</strong> — SA and AST communicate over gRPC with RxJava (<code>rx3grpc</code>) streaming and protobuf serialization.</li>
+            <li><strong>Aggregation engine</strong> — supports <code>COUNT</code>, <code>SUM</code>, <code>MAX</code>, <code>MIN</code> and <code>SUM_OF_PRODUCTS</code> over filtered event sets.</li>
+            <li><strong>Result cache</strong> — identical queries hit an in-memory cache instead of re-fetching from storage.</li>
+            <li><strong>ZeroMQ front door</strong> — a ROUTER socket receives requests from the sensor simulator (SS) and dispatches them asynchronously.</li>
+          </ul>
+
+          <h4>Components</h4>
+          <ul class="detail-list">
+            <li><strong>AST</strong> (Armazenamento de Séries Temporais) — stores events as daily CSV, serves reads over gRPC, and forms the DHT.</li>
+            <li><strong>SA</strong> (Servidor de Agregação) — receives aggregation requests, pulls events from the AST, and computes results.</li>
+            <li><strong>Erlang modules</strong> — coordination layer (built with rebar3, riak_dt).</li>
+            <li><strong>Test suite</strong> — Python scripts for cluster performance, Raft behaviour and chaos testing, with metrics exported to CSV.</li>
+          </ul>
+
+          <h4>Stack</h4>
+          <ul class="tags">
+            <li>Java 17</li>
+            <li>gRPC + protobuf</li>
+            <li>RxJava (rx3grpc)</li>
+            <li>Maven</li>
+            <li>Erlang / rebar3</li>
+            <li>ZeroMQ</li>
+            <li>Consistent hashing</li>
+            <li>Python (tests)</li>
+          </ul>
+        </template>
+      </article>
+
+      <!-- ============ XICOCHAIN ============ -->
+      <article class="card" data-project="xicochain" tabindex="0" role="button" aria-label="Open details for xicochain">
+        <div class="card-head">
+          <h3>xicochain</h3>
+          <span class="status status-wip">In development</span>
+        </div>
+        <p class="card-desc">
+          A blockchain written from scratch in Rust — my playground for really
+          understanding how a chain fits together underneath the abstractions:
+          blocks, hashing, consensus and networking. Early days, and evolving.
+        </p>
+        <ul class="tags">
+          <li>Rust</li>
+          <li>Blockchain</li>
+          <li>Cryptography</li>
+          <li>Systems</li>
+        </ul>
+        <div class="card-foot">
+          <span class="read-more">Read more →</span>
+          <a class="code-link" href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">View code ↗</a>
+        </div>
+
+        <template class="detail">
+          <p class="detail-lead">
+            xicochain is a from-scratch blockchain implementation in Rust. It's a learning
+            project — the goal is to build the pieces of a chain by hand rather than lean on
+            a framework, so I actually understand how blocks, hashing, consensus and the
+            peer-to-peer layer fit together.
+          </p>
+
+          <div class="wip-banner">🚧 Early development — the scaffolding is in place and the core is being built out.</div>
+
+          <h4>What it explores</h4>
+          <ul class="detail-list">
+            <li><strong>Blocks &amp; hashing</strong> — block structure, linking blocks by cryptographic hash into an append-only chain.</li>
+            <li><strong>Consensus</strong> — proof-of-work style validation and chain-selection rules.</li>
+            <li><strong>Transactions &amp; state</strong> — modelling transactions and the ledger state they mutate.</li>
+            <li><strong>Networking</strong> — a peer-to-peer layer for propagating blocks and transactions between nodes.</li>
+          </ul>
+
+          <h4>Why Rust</h4>
+          <p>
+            Blockchains are exactly the kind of software where memory safety and
+            correctness are non-negotiable, and where performance matters — Rust's
+            ownership model and zero-cost abstractions make it a natural fit for building
+            this kind of systems software.
+          </p>
+
+          <h4>Stack</h4>
+          <ul class="tags">
+            <li>Rust (edition 2024)</li>
+            <li>Cargo</li>
+            <li>Cryptographic hashing</li>
+          </ul>
+        </template>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Francisco Lopes · <span id="year"></span></p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-header">
+        <h3 id="modal-title"></h3>
+        <span id="modal-status" class="status"></span>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+      <div class="modal-footer">
+        <a id="modal-code" href="#" target="_blank" rel="noopener">View code on GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Francisco Lopes</title>
-  <meta name="description" content="Francisco Lopes — software engineer building distributed systems, blockchains and full-stack apps." />
+  <meta name="description" content="Francisco Lopes, software engineer building distributed systems, blockchains and full-stack apps." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -18,7 +18,7 @@
   </button>
 
   <main>
-    <!-- Hero -->
+    <!-- hero -->
     <header class="hero">
       <div class="avatar">
         <img src="assets/profile.jpg" alt="Francisco Lopes"
@@ -32,7 +32,7 @@
         <em>blockchains</em> and building things end&#8209;to&#8209;end.
       </p>
       <p class="intro">
-        I like problems where correctness actually matters — consensus, cryptography,
+        I like problems where correctness actually matters, consensus, cryptography,
         systems that have to agree with each other across a network. Below are a few
         projects I've been working on. <span class="hint">Click any card to dig into it.</span>
       </p>
@@ -46,17 +46,17 @@
         <a href="#projects">Projects</a>
       </nav>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="resume.pdf" download="Francisco_Lopes_CV.pdf">Download résumé ↓</a>
-        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">View résumé ↗</a>
+        <a class="btn btn-primary" href="resume.pdf" download="Francisco_Lopes_CV.pdf">Download my CV ↓</a>
+        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">View my CV ↗</a>
       </div>
     </header>
 
-    <!-- About -->
+    <!-- about -->
     <section id="about" class="about">
       <h2 class="section-title">About</h2>
       <p class="about-text">
         I'm a software engineering student and developer from Portugal, drawn to the
-        systems side of the field — the layers where data has to move reliably between
+        systems side of the field, the layers where data has to move reliably between
         machines and stay correct under failure. Most of my recent work sits at the
         intersection of distributed systems and blockchain: consensus, hashing, and
         the plumbing that keeps independent nodes in agreement. I like building the
@@ -115,15 +115,18 @@
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- projects -->
     <section id="projects" class="projects">
       <h2 class="section-title">Projects</h2>
 
-      <!-- ============ VOTIUM ============ -->
+      <!-- Votium -->
       <article class="card" data-project="votium" tabindex="0" role="button" aria-label="Open details for Votium">
         <div class="card-head">
           <h3>Votium</h3>
-          <span class="status status-live">Full-stack</span>
+          <div class="badges">
+            <span class="grade" title="Final university grade">17/20</span>
+            <span class="status status-live">Full-stack</span>
+          </div>
         </div>
         <p class="card-desc">
           A decentralized e-voting platform that stores ballots immutably on the
@@ -149,9 +152,10 @@
             Votium is a full-stack decentralized voting platform that combines the
             transparency of the Ethereum blockchain with the accessibility of a
             cross-platform mobile app. Authorized users can create elections, register
-            candidates and cast votes — every ballot is written immutably on-chain, so
+            candidates and cast votes, every ballot is written immutably on-chain, so
             results are publicly auditable and tamper-proof.
           </p>
+          <p class="grade-note">Final university grade: <strong>17/20</strong></p>
 
           <h4>Architecture</h4>
           <pre class="diagram">┌─────────────────────────────────────────────┐
@@ -178,10 +182,10 @@
 
           <h4>How it stays secure</h4>
           <ul class="detail-list">
-            <li><strong>Cryptographic privacy</strong> — voter codes are hashed with <code>keccak256</code> before on-chain storage; a vote can't be linked to an identity without the personal code.</li>
-            <li><strong>Double-vote prevention</strong> — enforced in the contract via <code>mapping(address =&gt; bool)</code> plus personal-code uniqueness checks.</li>
-            <li><strong>Hardened backend</strong> — JWT in HttpOnly cookies, brute-force rate limiting (5 req / 15 min), HTTPS, and on-device SecureStore for tokens.</li>
-            <li><strong>Role-based access</strong> — separate Admin and User permissions (only admins can see live vote statistics).</li>
+            <li><strong>Cryptographic privacy</strong>: voter codes are hashed with <code>keccak256</code> before on-chain storage; a vote can't be linked to an identity without the personal code.</li>
+            <li><strong>Double-vote prevention</strong>: enforced in the contract via <code>mapping(address =&gt; bool)</code> plus personal-code uniqueness checks.</li>
+            <li><strong>Hardened backend</strong>: JWT in HttpOnly cookies, brute-force rate limiting (5 req / 15 min), HTTPS, and on-device SecureStore for tokens.</li>
+            <li><strong>Role-based access</strong>: separate Admin and User permissions (only admins can see live vote statistics).</li>
           </ul>
 
           <h4>Notable</h4>
@@ -203,11 +207,14 @@
         </template>
       </article>
 
-      <!-- ============ TIMESERIES ============ -->
+      <!-- projSD-->
       <article class="card" data-project="timeseries" tabindex="0" role="button" aria-label="Open details for TimeSeriesDistributedService">
         <div class="card-head">
           <h3>TimeSeriesDistributedService</h3>
-          <span class="status status-live">Distributed systems</span>
+          <div class="badges">
+            <span class="grade" title="Final university grade">18/20</span>
+            <span class="status status-live">Distributed systems</span>
+          </div>
         </div>
         <p class="card-desc">
           A distributed time-series service that spreads events across a DHT using
@@ -233,9 +240,10 @@
             A distributed system for storing and aggregating time-series events. Events
             are partitioned across a ring of storage nodes (the <strong>AST</strong>) using
             consistent hashing, and an aggregation server (the <strong>SA</strong>) fetches
-            the relevant events and computes results — with an in-memory cache so repeated
+            the relevant events and computes results, with an in-memory cache so repeated
             queries are near-instant.
           </p>
+          <p class="grade-note">Final university grade: <strong>18/20</strong></p>
 
           <h4>Architecture</h4>
           <pre class="diagram">SSSimulator (Dealer)
@@ -254,19 +262,19 @@
 
           <h4>How it works</h4>
           <ul class="detail-list">
-            <li><strong>Consistent-hashing ring</strong> — a <code>ConsistentHashRing</code> with 150 virtual nodes decides which AST node owns each day of data; adding/removing nodes only reshuffles a slice of the keyspace.</li>
-            <li><strong>gRPC transport</strong> — SA and AST communicate over gRPC with RxJava (<code>rx3grpc</code>) streaming and protobuf serialization.</li>
-            <li><strong>Aggregation engine</strong> — supports <code>COUNT</code>, <code>SUM</code>, <code>MAX</code>, <code>MIN</code> and <code>SUM_OF_PRODUCTS</code> over filtered event sets.</li>
-            <li><strong>Result cache</strong> — identical queries hit an in-memory cache instead of re-fetching from storage.</li>
-            <li><strong>ZeroMQ front door</strong> — a ROUTER socket receives requests from the sensor simulator (SS) and dispatches them asynchronously.</li>
+            <li><strong>Consistent-hashing ring</strong>: a <code>ConsistentHashRing</code> with 150 virtual nodes decides which AST node owns each day of data; adding/removing nodes only reshuffles a slice of the keyspace.</li>
+            <li><strong>gRPC transport</strong>: SA and AST communicate over gRPC with RxJava (<code>rx3grpc</code>) streaming and protobuf serialization.</li>
+            <li><strong>Aggregation engine</strong>: supports <code>COUNT</code>, <code>SUM</code>, <code>MAX</code>, <code>MIN</code> and <code>SUM_OF_PRODUCTS</code> over filtered event sets.</li>
+            <li><strong>Result cache</strong>: identical queries hit an in-memory cache instead of re-fetching from storage.</li>
+            <li><strong>ZeroMQ front door</strong>: a ROUTER socket receives requests from the sensor simulator (SS) and dispatches them asynchronously.</li>
           </ul>
 
           <h4>Components</h4>
           <ul class="detail-list">
-            <li><strong>AST</strong> (Armazenamento de Séries Temporais) — stores events as daily CSV, serves reads over gRPC, and forms the DHT.</li>
-            <li><strong>SA</strong> (Servidor de Agregação) — receives aggregation requests, pulls events from the AST, and computes results.</li>
-            <li><strong>Erlang modules</strong> — coordination layer (built with rebar3, riak_dt).</li>
-            <li><strong>Test suite</strong> — Python scripts for cluster performance, Raft behaviour and chaos testing, with metrics exported to CSV.</li>
+            <li><strong>AST</strong> (Armazenamento de Séries Temporais), stores events as daily CSV, serves reads over gRPC, and forms the DHT.</li>
+            <li><strong>SA</strong> (Servidor de Agregação), receives aggregation requests, pulls events from the AST, and computes results.</li>
+            <li><strong>Erlang modules</strong>: coordination layer (built with rebar3, riak_dt).</li>
+            <li><strong>Test suite</strong>: Python scripts for cluster performance, Raft behaviour and chaos testing, with metrics exported to CSV.</li>
           </ul>
 
           <h4>Stack</h4>
@@ -283,16 +291,17 @@
         </template>
       </article>
 
-      <!-- ============ XICOCHAIN ============ -->
+      <!-- xicochain -->
       <article class="card" data-project="xicochain" tabindex="0" role="button" aria-label="Open details for xicochain">
         <div class="card-head">
           <h3>xicochain</h3>
           <span class="status status-wip">In development</span>
         </div>
         <p class="card-desc">
-          A blockchain written from scratch in Rust — my playground for really
-          understanding how a chain fits together underneath the abstractions:
-          blocks, hashing, consensus and networking. Early days, and evolving.
+          A passion project, I wanted to learn Rust and build my own blockchain
+          entirely from scratch. No frameworks, no shortcuts: just me figuring out how
+          a chain really works underneath the abstractions, one piece at a time.
+          Early days, and evolving.
         </p>
         <ul class="tags">
           <li>Rust</li>
@@ -302,38 +311,37 @@
         </ul>
         <div class="card-foot">
           <span class="read-more">Read more →</span>
-          <a class="code-link" href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">View code ↗</a>
+          <a class="code-link" href="https://github.com/FranciscoLopes8/xicochain" target="_blank" rel="noopener">View code ↗</a>
         </div>
 
         <template class="detail">
           <p class="detail-lead">
-            xicochain is a from-scratch blockchain implementation in Rust. It's a learning
-            project — the goal is to build the pieces of a chain by hand rather than lean on
-            a framework, so I actually understand how blocks, hashing, consensus and the
-            peer-to-peer layer fit together.
+            xicochain is a passion project. I wanted to learn Rust properly and build my
+            own blockchain from scratch, no frameworks to hide behind, so the goal is to
+            assemble every piece of the chain by hand and genuinely understand how blocks,
+            hashing, consensus and the peer-to-peer layer fit together. It's as much about
+            the learning as the result.
           </p>
 
-          <div class="wip-banner">🚧 Early development — the scaffolding is in place and the core is being built out.</div>
 
           <h4>What it explores</h4>
           <ul class="detail-list">
-            <li><strong>Blocks &amp; hashing</strong> — block structure, linking blocks by cryptographic hash into an append-only chain.</li>
-            <li><strong>Consensus</strong> — proof-of-work style validation and chain-selection rules.</li>
-            <li><strong>Transactions &amp; state</strong> — modelling transactions and the ledger state they mutate.</li>
-            <li><strong>Networking</strong> — a peer-to-peer layer for propagating blocks and transactions between nodes.</li>
+            <li><strong>Blocks &amp; hashing</strong>: block structure, linking blocks by cryptographic hash into an append-only chain.</li>
+            <li><strong>Consensus</strong>: proof-of-work style validation and chain-selection rules.</li>
+            <li><strong>Transactions &amp; state</strong>: modelling transactions and the ledger state they mutate.</li>
+            <li><strong>Networking</strong>: a peer-to-peer layer for propagating blocks and transactions between nodes.</li>
           </ul>
 
           <h4>Why Rust</h4>
           <p>
-            Blockchains are exactly the kind of software where memory safety and
-            correctness are non-negotiable, and where performance matters — Rust's
-            ownership model and zero-cost abstractions make it a natural fit for building
-            this kind of systems software.
+            I picked Rust for xicochain partly to learn it properly, 
+            and partly because a blockchain is a good excuse to: 
+            shared mutable state across a p2p network is exactly where you want the compiler arguing with you.
           </p>
 
           <h4>Stack</h4>
           <ul class="tags">
-            <li>Rust (edition 2024)</li>
+            <li>Rust</li>
             <li>Cargo</li>
             <li>Cryptographic hashing</li>
           </ul>

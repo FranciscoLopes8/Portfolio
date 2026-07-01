@@ -1,44 +1,14 @@
-# Portfolio — Francisco Lopes
+# My Portfolio
 
-A simple, personal single-page portfolio. Plain HTML/CSS/JS, no build step.
+This is my personal portfolio. I built it because I wanted an easy way to show my
+projects and actually explain them in detail, instead of just linking a bunch of repos
+and hoping people dig through the code.
 
-## Run locally
+Each project has a short summary, and clicking it opens a deeper write-up with the
+architecture and how it all fits together. It's just plain HTML, CSS and JavaScript,
+no build step or frameworks.
 
-Just open `index.html` in a browser, or serve it:
 
-```bash
-cd ~/portfolio
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
 
-## Deploy (GitHub Pages)
-
-```bash
-cd ~/portfolio
-git init
-git add .
-git commit -m "Initial portfolio"
-git branch -M main
-git remote add origin git@github.com:FranciscoLopes8/portfolio.git
-git push -u origin main
-```
-
-Then in the repo: **Settings → Pages → Branch: `main` / root → Save**.
+Then go to the repo's **Settings, Pages, Branch: `main` / root, Save**.
 It'll be live at `https://franciscolopes8.github.io/portfolio/`.
-
-## Editing
-
-- Text, projects, about & skills: `index.html`
-- Colors, fonts, layout: `styles.css`
-- Theme toggle / footer year: `script.js`
-
-## Photo
-
-Drop a square image at `assets/profile.jpg` and it appears automatically in the hero.
-Until then, a "FL" initials placeholder shows instead.
-
-## Résumé
-
-`resume.pdf` is the file served by the Download/View buttons (currently a copy of
-`FranciscoLopes_EN_29_05_26.pdf`). Replace `resume.pdf` to update it.

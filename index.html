@@ -5,11 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Francisco Lopes</title>
   <meta name="description" content="Francisco Lopes, software engineer building distributed systems, blockchains and full-stack apps." />
+
+  <!-- OpenGraph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://franciscolopes8.github.io/Portfolio/" />
+  <meta property="og:title" content="Francisco Lopes" />
+  <meta property="og:description" content="Distributed systems, blockchains and the cloud that runs them. Projects, architecture write-ups and code." />
+  <meta property="og:image" content="https://franciscolopes8.github.io/Portfolio/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Francisco Lopes, software engineer. A terminal window lists his projects and grades." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Francisco Lopes" />
+  <meta name="twitter:description" content="Distributed systems, blockchains and the cloud that runs them. Projects, architecture write-ups and code." />
+  <meta name="twitter:image" content="https://franciscolopes8.github.io/Portfolio/assets/og.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%233a5a40'/><text x='50' y='52' font-family='monospace' font-size='46' font-weight='bold' fill='%23fbfbf9' text-anchor='middle' dominant-baseline='central'>FL</text></svg>" />
+  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234B2AFA'/><text x='50' y='52' font-family='monospace' font-size='46' font-weight='bold' fill='%23fbfbf9' text-anchor='middle' dominant-baseline='central'>FL</text></svg>" />
 </head>
 <body>
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
@@ -34,10 +48,12 @@
       <p class="intro">
         I like problems where correctness actually matters, consensus, cryptography,
         systems that have to agree with each other across a network. Below are a few
-        projects I've been working on. <span class="hint">Click any card to dig into it.</span>
+        projects I've been working on. <span class="hint">Click a card to bring it up front, click it again to dig in.</span>
       </p>
       <nav class="socials">
         <a href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">·</span>
+        <a href="https://www.linkedin.com/in/francisco-lopes-6837162b9/" target="_blank" rel="noopener">LinkedIn</a>
         <span class="dot">·</span>
         <a href="mailto:franciscodl2004@gmail.com">Email</a>
         <span class="dot">·</span>
@@ -61,63 +77,44 @@
         intersection of distributed systems and blockchain: consensus, hashing, and
         the plumbing that keeps independent nodes in agreement. I like building the
         whole thing, from the smart contract or storage node up to the interface a
-        person actually touches.
+        person actually touches. Lately that also means the operations side: deploying
+        applications to Kubernetes clusters on Google Cloud, automating the whole
+        install with Ansible, and load-testing them until I find the point where they
+        break, then fixing it with autoscaling.
       </p>
 
-      <div class="skills">
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <ul class="tags">
-            <li>Java</li>
-            <li>Rust</li>
-            <li>TypeScript</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Solidity</li>
-            <li>Erlang</li>
-            <li>SQL</li>
-          </ul>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="tl-dot tl-red" aria-hidden="true"></span>
+          <span class="tl-dot tl-yellow" aria-hidden="true"></span>
+          <span class="tl-dot tl-green" aria-hidden="true"></span>
+          <span class="terminal-title">francisco@portfolio: ~/skills</span>
         </div>
-        <div class="skill-group">
-          <h4>Distributed &amp; Backend</h4>
-          <ul class="tags">
-            <li>gRPC / protobuf</li>
-            <li>RxJava</li>
-            <li>ZeroMQ</li>
-            <li>Consistent hashing</li>
-            <li>Raft</li>
-            <li>Node.js / Express</li>
-            <li>MongoDB</li>
-            <li>REST APIs</li>
-          </ul>
+        <div class="terminal-scroll" id="term-scroll">
+        <pre class="skills-tree"><span class="prompt"><span class="dollar">$</span> tree skills/</span>
+skills/
+<span class="branch">├──</span> <span class="dir">languages/</span>         Java · Rust · TypeScript · JavaScript · Python · Solidity · Erlang · SQL
+<span class="branch">├──</span> <span class="dir">distributed/</span>       gRPC / protobuf · RxJava · ZeroMQ · Raft · consistent hashing · Node.js / Express · MongoDB · REST APIs
+<span class="branch">├──</span> <span class="dir">blockchain/</span>        Ethereum · smart contracts · ethers.js · Truffle / Ganache · cryptography
+<span class="branch">├──</span> <span class="dir">cloud-devops/</span>      Kubernetes / GKE · Ansible · Google Cloud · Docker · HPA / autoscaling · Locust · PostgreSQL · Vagrant
+<span class="branch">└──</span> <span class="dir">frontend-tooling/</span>  React Native / Expo · NativeWind / Tailwind · Git · Maven · Linux
+<span class="summary">5 directories, 34 skills</span></pre>
+        <pre class="term-output" id="term-output" aria-live="polite"></pre>
+        <div class="term-input-line">
+          <span class="dollar">$</span>
+          <input id="term-input" class="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help" aria-label="Terminal input. Type help and press Enter." />
         </div>
-        <div class="skill-group">
-          <h4>Blockchain</h4>
-          <ul class="tags">
-            <li>Ethereum</li>
-            <li>Smart contracts</li>
-            <li>ethers.js</li>
-            <li>Truffle / Ganache</li>
-            <li>Cryptography</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h4>Frontend &amp; Tooling</h4>
-          <ul class="tags">
-            <li>React Native / Expo</li>
-            <li>NativeWind / Tailwind</li>
-            <li>Git</li>
-            <li>Maven</li>
-            <li>Docker</li>
-            <li>Linux</li>
-          </ul>
-        </div>
+        </div><!-- /terminal-scroll -->
       </div>
     </section>
 
     <!-- projects -->
     <section id="projects" class="projects">
-      <h2 class="section-title">Projects</h2>
+      <p class="projects-eyebrow">Selected Projects</p>
+      <h2 class="projects-title">Things I've built <span class="nowrap">&amp; am building.</span></h2>
+
+      <div class="carousel">
+        <div class="carousel-stage">
 
       <!-- Votium -->
       <article class="card" data-project="votium" tabindex="0" role="button" aria-label="Open details for Votium">
@@ -291,6 +288,97 @@
         </template>
       </article>
 
+      <!-- ASCN / AirTrail on GKE -->
+      <article class="card" data-project="airtrail-gke" tabindex="0" role="button" aria-label="Open details for AirTrail on GKE">
+        <div class="card-head">
+          <h3>AirTrail on GKE</h3>
+          <div class="badges">
+            <span class="grade" title="Final university grade">17.5/20</span>
+            <span class="status status-live">Cloud &amp; DevOps</span>
+          </div>
+        </div>
+        <p class="card-desc">
+          Fully automated deployment and optimization of <strong>AirTrail</strong> (an
+          open-source flight-tracking app) on Google Kubernetes Engine. Ansible playbooks
+          spin the whole cluster up and down, an HPA scales the app under load, and Locust
+          benchmarks with up to 500 concurrent users measure the difference.
+        </p>
+        <ul class="tags">
+          <li>Kubernetes / GKE</li>
+          <li>Ansible</li>
+          <li>Google Cloud</li>
+          <li>Locust</li>
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+        </ul>
+        <div class="card-foot">
+          <span class="read-more">Read more →</span>
+          <a class="code-link" href="https://github.com/ASCN-UM/GrupoTP-17" target="_blank" rel="noopener">View code ↗</a>
+        </div>
+
+        <template class="detail">
+          <p class="detail-lead">
+            A cloud engineering project (team of 5) built around AirTrail, an open-source
+            SvelteKit + PostgreSQL app for tracking personal flights. The goal: install it
+            on Google Cloud with zero manual steps, find its performance bottlenecks under
+            load, then fix them with autoscaling, and prove the fix with before/after
+            benchmarks.
+          </p>
+          <p class="grade-note">Final university grade: <strong>17.5/20</strong></p>
+
+          <h4>Architecture</h4>
+          <pre class="diagram">┌─────────────────────────────────────────────┐
+│         Ansible Playbooks (automation)      │
+│  gke-cluster-create · airtrail-deploy       │
+│  airtrail-undeploy · gke-cluster-destroy    │
+└───────────────────┬─────────────────────────┘
+                    ▼
+┌─────────────────────────────────────────────┐
+│       Google Kubernetes Engine cluster      │
+│                                             │
+│  LoadBalancer ──► AirTrail pods (SvelteKit) │
+│      Service       HPA: 2–5 replicas        │
+│                    scale at 60% CPU         │
+│                        │                    │
+│                        ▼                    │
+│                 PostgreSQL pod              │
+│                                             │
+│  Node autoscaling: up to 5 × e2-medium      │
+└─────────────────────▲───────────────────────┘
+                      │ 50 / 200 / 500 users
+              Locust VM on GCP
+         (login · list flights · save+delete)</pre>
+
+          <h4>Automated install</h4>
+          <ul class="detail-list">
+            <li><strong>One-command deploy</strong>: Ansible playbooks (GCP + Kubernetes modules) create the GKE cluster, deploy PostgreSQL and AirTrail, and tear everything down again, with configuration exposed as variables.</li>
+            <li><strong>LoadBalancer Service</strong>: chosen over NodePort to lean on the cloud provider's load balancing and IP management; the app's <code>ORIGIN</code> is derived from the assigned IP to avoid cross-site POST rejections.</li>
+            <li><strong>Health-gated steps</strong>: each stage waits for the previous one (e.g. <code>pg_isready</code> before the app starts talking to the database).</li>
+          </ul>
+
+          <h4>Benchmarking &amp; optimization</h4>
+          <ul class="detail-list">
+            <li><strong>Locust load tests</strong>: a weighted user scenario (login, listing flights, write-heavy save/delete) run from a dedicated GCP VM at 50, 200 and 500 concurrent users.</li>
+            <li><strong>Baseline findings</strong>: a single app instance hit 21% request failures at 200 users and 36% at 500, with steadily climbing latency.</li>
+            <li><strong>Fix</strong>: a Horizontal Pod Autoscaler (2–5 replicas, scaling at 60% CPU) plus GKE node autoscaling, with tuned CPU/memory requests and limits.</li>
+            <li><strong>Result</strong>: at 200 users, failures dropped from 21% to 4% and latency roughly halved; the minimum of 2 replicas also removed the single point of failure.</li>
+            <li><strong>Monitoring</strong>: Google Cloud dashboards (per-component CPU, memory, bandwidth) combined with Locust's live latency/failure charts.</li>
+          </ul>
+
+          <h4>Stack</h4>
+          <ul class="tags">
+            <li>Google Kubernetes Engine</li>
+            <li>Ansible</li>
+            <li>Kubernetes HPA</li>
+            <li>Node autoscaling</li>
+            <li>Locust (Python)</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>Vagrant</li>
+          </ul>
+        </template>
+      </article>
+
       <!-- xicochain -->
       <article class="card" data-project="xicochain" tabindex="0" role="button" aria-label="Open details for xicochain">
         <div class="card-head">
@@ -347,6 +435,31 @@
           </ul>
         </template>
       </article>
+
+        </div><!-- /carousel-stage -->
+
+        <div class="carousel-nav" aria-label="Project navigation">
+          <button class="carousel-arrow" data-dir="-1" aria-label="Previous project">←</button>
+          <div class="carousel-dots"></div>
+          <button class="carousel-arrow" data-dir="1" aria-label="Next project">→</button>
+        </div>
+      </div><!-- /carousel -->
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="contact">
+      <p class="projects-eyebrow">Get in touch</p>
+      <h2 class="projects-title">Let's build something <span class="nowrap">that has to work.</span></h2>
+      <p class="contact-text">
+        Open to internships, junior roles and interesting problems.
+        The fastest way to reach me is email.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:franciscodl2004@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/francisco-lopes-6837162b9/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn btn-ghost" href="resume.pdf" download="Francisco_Lopes_CV.pdf">CV ↓</a>
+      </div>
     </section>
   </main>
 
@@ -370,6 +483,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>

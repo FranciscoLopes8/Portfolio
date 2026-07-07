@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Francisco Lopes</title>
-  <meta name="description" content="Francisco Lopes, software engineer building distributed systems, blockchains and full-stack apps." />
+  <meta name="description"
+    content="Francisco Lopes, software engineer building distributed systems, blockchains and full-stack apps." />
 
   <!-- OpenGraph / social sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://franciscolopes8.github.io/Portfolio/" />
   <meta property="og:title" content="Francisco Lopes" />
-  <meta property="og:description" content="Distributed systems, blockchains and the cloud that runs them. Projects, architecture write-ups and code." />
+  <meta property="og:description"
+    content="Distributed systems, blockchains and the cloud that runs them. Projects, architecture write-ups and code." />
   <meta property="og:image" content="https://franciscolopes8.github.io/Portfolio/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Francisco Lopes, software engineer. A terminal window lists his projects and grades." />
+  <meta property="og:image:alt"
+    content="Francisco Lopes, software engineer. A terminal window lists his projects and grades." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Francisco Lopes" />
-  <meta name="twitter:description" content="Distributed systems, blockchains and the cloud that runs them. Projects, architecture write-ups and code." />
+  <meta name="twitter:description"
+    content="Distributed systems, blockchains and the cloud that runs them. Projects, architecture write-ups and code." />
   <meta name="twitter:image" content="https://franciscolopes8.github.io/Portfolio/assets/og.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=10" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234B2AFA'/><text x='50' y='52' font-family='monospace' font-size='46' font-weight='bold' fill='%23fbfbf9' text-anchor='middle' dominant-baseline='central'>FL</text></svg>" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234B2AFA'/><text x='50' y='52' font-family='monospace' font-size='46' font-weight='bold' fill='%23fbfbf9' text-anchor='middle' dominant-baseline='central'>FL</text></svg>" />
 </head>
+
 <body>
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
     <span class="theme-icon-sun">☀</span>
@@ -36,24 +45,23 @@
     <header class="hero">
       <div class="avatar">
         <img src="assets/profile.jpg" alt="Francisco Lopes"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+          onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
         <span class="avatar-fallback" style="display:none" aria-hidden="true">FL</span>
       </div>
       <p class="eyebrow">Hi, I'm</p>
       <h1>Francisco Lopes</h1>
       <p class="tagline">
         Software engineer with a soft spot for <em>distributed systems</em>,
-        <em>blockchains</em> and building things end&#8209;to&#8209;end.
+        <em>blockchains</em>, the <em>cloud</em> they run on,
+        and building things end&#8209;to&#8209;end.
       </p>
       <p class="intro">
-        I like problems where correctness actually matters, consensus, cryptography,
-        systems that have to agree with each other across a network. Below are a few
-        projects I've been working on. <span class="hint">Click a card to bring it up front, click it again to dig in.</span>
+        <span class="hint">Click a card to bring it up front, click it again to dig in.</span>
       </p>
       <nav class="socials">
         <a href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">GitHub</a>
         <span class="dot">·</span>
-        <a href="https://www.linkedin.com/in/francisco-lopes-6837162b9/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/fdomingueslopes/" target="_blank" rel="noopener">LinkedIn</a>
         <span class="dot">·</span>
         <a href="mailto:franciscodl2004@gmail.com">Email</a>
         <span class="dot">·</span>
@@ -62,8 +70,8 @@
         <a href="#projects">Projects</a>
       </nav>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="resume.pdf" download="Francisco_Lopes_CV.pdf">Download my CV ↓</a>
-        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">View my CV ↗</a>
+        <a class="btn btn-primary" href="cv.pdf" download="FranciscoLopesCV.pdf">Download my CV ↓</a>
+        <a class="btn btn-ghost" href="cv.pdf" target="_blank" rel="noopener">View my CV ↗</a>
       </div>
     </header>
 
@@ -80,7 +88,7 @@
         person actually touches. Lately that also means the operations side: deploying
         applications to Kubernetes clusters on Google Cloud, automating the whole
         install with Ansible, and load-testing them until I find the point where they
-        break, then fixing it with autoscaling.
+        break.
       </p>
 
       <div class="terminal">
@@ -91,19 +99,21 @@
           <span class="terminal-title">francisco@portfolio: ~/skills</span>
         </div>
         <div class="terminal-scroll" id="term-scroll">
-        <pre class="skills-tree"><span class="prompt"><span class="dollar">$</span> tree skills/</span>
+          <pre class="skills-tree"><span class="prompt"><span class="dollar">$</span> tree skills/</span>
 skills/
-<span class="branch">├──</span> <span class="dir">languages/</span>         Java · Rust · TypeScript · JavaScript · Python · Solidity · Erlang · SQL
-<span class="branch">├──</span> <span class="dir">distributed/</span>       gRPC / protobuf · RxJava · ZeroMQ · Raft · consistent hashing · Node.js / Express · MongoDB · REST APIs
-<span class="branch">├──</span> <span class="dir">blockchain/</span>        Ethereum · smart contracts · ethers.js · Truffle / Ganache · cryptography
+<span class="branch">├──</span> <span class="dir">languages/</span>         Java · Rust · Python · Solidity · Erlang · SQL · TypeScript · JavaScript
+<span class="branch">├──</span> <span class="dir">distributed/</span>       gRPC / protobuf · RxJava · ZeroMQ · Consistent Hashing · Node.js / Express · MongoDB · REST APIs · Raft
+<span class="branch">├──</span> <span class="dir">blockchain/</span>        Ethereum · Smart Contracts · ethers.js · Truffle / Ganache · Cryptography
 <span class="branch">├──</span> <span class="dir">cloud-devops/</span>      Kubernetes / GKE · Ansible · Google Cloud · Docker · HPA / autoscaling · Locust · PostgreSQL · Vagrant
-<span class="branch">└──</span> <span class="dir">frontend-tooling/</span>  React Native / Expo · NativeWind / Tailwind · Git · Maven · Linux
-<span class="summary">5 directories, 34 skills</span></pre>
-        <pre class="term-output" id="term-output" aria-live="polite"></pre>
-        <div class="term-input-line">
-          <span class="dollar">$</span>
-          <input id="term-input" class="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help" aria-label="Terminal input. Type help and press Enter." />
-        </div>
+<span class="branch">├──</span> <span class="dir">frontend/</span>          React Native / Expo · NativeWind / Tailwind
+<span class="branch">└──</span> <span class="dir">tooling/</span>           Git · Maven · Cargo · Bash · npm
+<span class="summary">6 directories, 36 skills</span></pre>
+          <pre class="term-output" id="term-output" aria-live="polite"></pre>
+          <div class="term-input-line">
+            <span class="dollar">$</span>
+            <input id="term-input" class="term-input" type="text" autocomplete="off" autocapitalize="off"
+              spellcheck="false" placeholder="type help" aria-label="Terminal input. Type help and press Enter." />
+          </div>
         </div><!-- /terminal-scroll -->
       </div>
     </section>
@@ -116,46 +126,47 @@ skills/
       <div class="carousel">
         <div class="carousel-stage">
 
-      <!-- Votium -->
-      <article class="card" data-project="votium" tabindex="0" role="button" aria-label="Open details for Votium">
-        <div class="card-head">
-          <h3>Votium</h3>
-          <div class="badges">
-            <span class="grade" title="Final university grade">17/20</span>
-            <span class="status status-live">Full-stack</span>
-          </div>
-        </div>
-        <p class="card-desc">
-          A decentralized e-voting platform that stores ballots immutably on the
-          Ethereum blockchain. Voter codes are hashed with <code>keccak256</code> before
-          going on-chain, double-votes are blocked at the contract level, and the whole
-          thing runs cross-platform from a single Expo codebase.
-        </p>
-        <ul class="tags">
-          <li>React Native / Expo</li>
-          <li>TypeScript</li>
-          <li>Solidity</li>
-          <li>Ethereum</li>
-          <li>Express.js</li>
-          <li>MongoDB</li>
-        </ul>
-        <div class="card-foot">
-          <span class="read-more">Read more →</span>
-          <a class="code-link" href="https://github.com/FranciscoLopes8/Votium" target="_blank" rel="noopener">View code ↗</a>
-        </div>
+          <!-- Votium -->
+          <article class="card" data-project="votium" tabindex="0" role="button" aria-label="Open details for Votium">
+            <div class="card-head">
+              <h3>Votium</h3>
+              <div class="badges">
+                <span class="grade" title="Final university grade">17/20</span>
+                <span class="status status-live">Full-stack</span>
+              </div>
+            </div>
+            <p class="card-desc">
+              A decentralized e-voting platform that stores ballots immutably on the
+              Ethereum blockchain. Voter codes are hashed with <code>keccak256</code> before
+              going on-chain, double-votes are blocked at the contract level, and the whole
+              thing runs cross-platform from a single Expo codebase.
+            </p>
+            <ul class="tags">
+              <li>React Native / Expo</li>
+              <li>TypeScript</li>
+              <li>Solidity</li>
+              <li>Ethereum</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+            </ul>
+            <div class="card-foot">
+              <span class="read-more">Read more →</span>
+              <a class="code-link" href="https://github.com/FranciscoLopes8/Votium" target="_blank" rel="noopener">View
+                code ↗</a>
+            </div>
 
-        <template class="detail">
-          <p class="detail-lead">
-            Votium is a full-stack decentralized voting platform that combines the
-            transparency of the Ethereum blockchain with the accessibility of a
-            cross-platform mobile app. Authorized users can create elections, register
-            candidates and cast votes, every ballot is written immutably on-chain, so
-            results are publicly auditable and tamper-proof.
-          </p>
-          <p class="grade-note">Final university grade: <strong>17/20</strong></p>
+            <template class="detail">
+              <p class="detail-lead">
+                Votium is a full-stack decentralized voting platform that combines the
+                transparency of the Ethereum blockchain with the accessibility of a
+                cross-platform mobile app. Authorized users can create elections, register
+                candidates and cast votes, every ballot is written immutably on-chain, so
+                results are publicly auditable and tamper-proof.
+              </p>
+              <p class="grade-note">Final university grade: <strong>17/20</strong></p>
 
-          <h4>Architecture</h4>
-          <pre class="diagram">┌─────────────────────────────────────────────┐
+              <h4>Architecture</h4>
+              <pre class="diagram">┌─────────────────────────────────────────────┐
 │            Mobile App (Expo / RN)           │
 │      TypeScript · NativeWind · expo-router  │
 └───────────────────┬─────────────────────────┘
@@ -177,73 +188,84 @@ skills/
 │   VotoRegistado event · immutable ballots   │
 └─────────────────────────────────────────────┘</pre>
 
-          <h4>How it stays secure</h4>
-          <ul class="detail-list">
-            <li><strong>Cryptographic privacy</strong>: voter codes are hashed with <code>keccak256</code> before on-chain storage; a vote can't be linked to an identity without the personal code.</li>
-            <li><strong>Double-vote prevention</strong>: enforced in the contract via <code>mapping(address =&gt; bool)</code> plus personal-code uniqueness checks.</li>
-            <li><strong>Hardened backend</strong>: JWT in HttpOnly cookies, brute-force rate limiting (5 req / 15 min), HTTPS, and on-device SecureStore for tokens.</li>
-            <li><strong>Role-based access</strong>: separate Admin and User permissions (only admins can see live vote statistics).</li>
-          </ul>
+              <h4>How it stays secure</h4>
+              <ul class="detail-list">
+                <li><strong>Cryptographic privacy</strong>: voter codes are hashed with <code>keccak256</code> before
+                  on-chain storage; a vote can't be linked to an identity without the personal code.</li>
+                <li><strong>Double-vote prevention</strong>: enforced in the contract via
+                  <code>mapping(address =&gt; bool)</code> plus personal-code uniqueness checks.
+                </li>
+                <li><strong>Hardened backend</strong>: JWT in HttpOnly cookies, brute-force rate limiting,
+                  HTTPS, and on-device SecureStore for tokens.</li>
+                <li><strong>Role-based access</strong>: separate Admin and User permissions (only admins can see live
+                  vote statistics).</li>
+              </ul>
 
-          <h4>Notable</h4>
-          <p>The backend was prototyped and stress-tested on a <strong>Raspberry Pi 3B</strong> (ARM Cortex-A53, 1&nbsp;GB RAM) to validate behaviour under constrained hardware.</p>
+              <h4>Notable</h4>
+              <p>The backend was prototyped and stress-tested on a <strong>Raspberry Pi 3B</strong> (ARM Cortex-A53,
+                1&nbsp;GB RAM) to validate behaviour under constrained hardware.</p>
 
-          <h4>Stack</h4>
-          <ul class="tags">
-            <li>React Native 0.79 / Expo 53</li>
-            <li>TypeScript 5.8</li>
-            <li>expo-router</li>
-            <li>NativeWind</li>
-            <li>Express 4</li>
-            <li>MongoDB / Mongoose 8</li>
-            <li>JWT + bcryptjs</li>
-            <li>Solidity ^0.8.13</li>
-            <li>ethers.js v5</li>
-            <li>Truffle + Ganache</li>
-          </ul>
-        </template>
-      </article>
+              <h4>Stack</h4>
+              <ul class="tags">
+                <li>React Native 0.79 / Expo 53</li>
+                <li>TypeScript 5.8</li>
+                <li>expo-router</li>
+                <li>NativeWind</li>
+                <li>Express 4</li>
+                <li>MongoDB / Mongoose 8</li>
+                <li>JWT + bcryptjs</li>
+                <li>Solidity ^0.8.13</li>
+                <li>ethers.js v5</li>
+                <li>Truffle + Ganache</li>
+              </ul>
+            </template>
+          </article>
 
-      <!-- projSD-->
-      <article class="card" data-project="timeseries" tabindex="0" role="button" aria-label="Open details for TimeSeriesDistributedService">
-        <div class="card-head">
-          <h3>TimeSeriesDistributedService</h3>
-          <div class="badges">
-            <span class="grade" title="Final university grade">18/20</span>
-            <span class="status status-live">Distributed systems</span>
-          </div>
-        </div>
-        <p class="card-desc">
-          A distributed time-series service that spreads events across a DHT using
-          consistent hashing and answers aggregation queries over the cluster. Java nodes
-          talk over gRPC with RxJava and protobuf, Erlang handles coordination, and a
-          Python suite runs performance and chaos tests against it.
-        </p>
-        <ul class="tags">
-          <li>Java</li>
-          <li>gRPC / protobuf</li>
-          <li>RxJava</li>
-          <li>Erlang</li>
-          <li>Consistent hashing</li>
-          <li>ZeroMQ</li>
-        </ul>
-        <div class="card-foot">
-          <span class="read-more">Read more →</span>
-          <a class="code-link" href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">View code ↗</a>
-        </div>
+          <!-- projSD-->
+          <article class="card" data-project="timeseries" tabindex="0" role="button"
+            aria-label="Open details for TimeSeriesDistributedService">
+            <div class="card-head">
+              <h3>DistributedService</h3>
+              <div class="badges">
+                <span class="grade" title="Final university grade">18/20</span>
+                <span class="status status-live">Distributed systems</span>
+              </div>
+            </div>
+            <p class="card-desc">
+              A distributed time-series service for IoT fleets: an Erlang session layer
+              authenticates devices and tracks the cluster with CRDTs, gossip and Raft,
+              while Java nodes spread events across a DHT with consistent hashing and
+              answer aggregation queries over gRPC. A Python suite runs performance and
+              chaos tests against it.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>Erlang</li>
+              <li>gRPC / protobuf</li>
+              <li>RxJava</li>
+              <li>Raft · CRDTs · Gossip</li>
+              <li>Consistent hashing</li>
+              <li>ZeroMQ</li>
+            </ul>
+            <div class="card-foot">
+              <span class="read-more">Read more →</span>
+              <a class="code-link" href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">View code
+                ↗</a>
+            </div>
 
-        <template class="detail">
-          <p class="detail-lead">
-            A distributed system for storing and aggregating time-series events. Events
-            are partitioned across a ring of storage nodes (the <strong>AST</strong>) using
-            consistent hashing, and an aggregation server (the <strong>SA</strong>) fetches
-            the relevant events and computes results, with an in-memory cache so repeated
-            queries are near-instant.
-          </p>
-          <p class="grade-note">Final university grade: <strong>18/20</strong></p>
+            <template class="detail">
+              <p class="detail-lead">
+                A distributed system for storing and aggregating time-series events from IoT
+                fleets. A session layer (the <strong>SS</strong>) written in Erlang fronts the
+                whole system, events are partitioned across a ring of storage nodes (the
+                <strong>AST</strong>) using consistent hashing, and an aggregation server (the
+                <strong>SA</strong>) fetches the relevant events and computes results, with a
+                cache that makes queries near-instant.
+              </p>
+              <p class="grade-note">Final university grade: <strong>18/20</strong></p>
 
-          <h4>Architecture</h4>
-          <pre class="diagram">SSSimulator (Dealer)
+              <h4>Architecture</h4>
+              <pre class="diagram">SSSimulator (Dealer)
      │  ZMQ
      ▼
   SARouter ──► AggregationService ──► ASTClient
@@ -257,77 +279,99 @@ skills/
                                    EventStorage
                                     (CSV / day)</pre>
 
-          <h4>How it works</h4>
-          <ul class="detail-list">
-            <li><strong>Consistent-hashing ring</strong>: a <code>ConsistentHashRing</code> with 150 virtual nodes decides which AST node owns each day of data; adding/removing nodes only reshuffles a slice of the keyspace.</li>
-            <li><strong>gRPC transport</strong>: SA and AST communicate over gRPC with RxJava (<code>rx3grpc</code>) streaming and protobuf serialization.</li>
-            <li><strong>Aggregation engine</strong>: supports <code>COUNT</code>, <code>SUM</code>, <code>MAX</code>, <code>MIN</code> and <code>SUM_OF_PRODUCTS</code> over filtered event sets.</li>
-            <li><strong>Result cache</strong>: identical queries hit an in-memory cache instead of re-fetching from storage.</li>
-            <li><strong>ZeroMQ front door</strong>: a ROUTER socket receives requests from the sensor simulator (SS) and dispatches them asynchronously.</li>
-          </ul>
+              <h4>How it works</h4>
+              <ul class="detail-list">
+                <li><strong>Session front door</strong>: every device and consumer authenticates against the SS over a
+                  ZeroMQ ROUTER socket; each connection runs in its own lightweight Erlang process, so thousands of
+                  clients cost almost nothing.</li>
+                <li><strong>CRDTs + gossip</strong>: the cluster-wide state (who is online, active in the last minute,
+                  per type) lives in LWW-map CRDTs that SS instances merge via periodic gossip, giving eventual
+                  consistency with zero coordination.</li>
+                <li><strong>Raft where it matters</strong>: consumer registration needs global uniqueness, so those
+                  operations go through a Raft log (leader election, AppendEntries, majority commit) implemented in
+                  <code>raft.erl</code>, a hybrid of strong and eventual consistency by operation type.</li>
+                <li><strong>Consistent-hashing ring</strong>: a <code>ConsistentHashRing</code> with virtual nodes
+                  decides which AST node owns each day of data; adding/removing nodes only reshuffles a slice of the
+                  keyspace, and a configurable replication factor keeps data available through node failures.</li>
+                <li><strong>gRPC transport</strong>: SA and AST communicate over gRPC with RxJava (<code>rx3grpc</code>)
+                  streaming and protobuf serialization.</li>
+                <li><strong>Aggregation engine</strong>: supports <code>COUNT</code>, <code>SUM</code>,
+                  <code>MAX</code>, <code>MIN</code> and <code>SUM_OF_PRODUCTS</code> over filtered event sets, with a
+                  distributed cache coordinated through Cyclon peer sampling.</li>
+              </ul>
 
-          <h4>Components</h4>
-          <ul class="detail-list">
-            <li><strong>AST</strong> (Armazenamento de Séries Temporais), stores events as daily CSV, serves reads over gRPC, and forms the DHT.</li>
-            <li><strong>SA</strong> (Servidor de Agregação), receives aggregation requests, pulls events from the AST, and computes results.</li>
-            <li><strong>Erlang modules</strong>: coordination layer (built with rebar3, riak_dt).</li>
-            <li><strong>Test suite</strong>: Python scripts for cluster performance, Raft behaviour and chaos testing, with metrics exported to CSV.</li>
-          </ul>
+              <h4>Components</h4>
+              <ul class="detail-list">
+                <li><strong>SS</strong> (Servidor de Sessão), the Erlang entry point: authenticates devices and
+                  consumers, tracks global system state with CRDTs and gossip, runs Raft for operations that need
+                  strong consistency, and pushes real-time notifications over ZeroMQ PUB/SUB.</li>
+                <li><strong>SA</strong> (Servidor de Agregação), receives aggregation requests, pulls events from the
+                  AST, computes results, and shares a distributed cache with its peers.</li>
+                <li><strong>AST</strong> (Armazenamento de Séries Temporais), stores events as daily CSV, serves reads
+                  over gRPC, and forms the replicated DHT.</li>
+                <li><strong>Test suite</strong>: Python scripts for cluster performance, Raft behaviour and chaos
+                  testing, with metrics exported to CSV.</li>
+              </ul>
 
-          <h4>Stack</h4>
-          <ul class="tags">
-            <li>Java 17</li>
-            <li>gRPC + protobuf</li>
-            <li>RxJava (rx3grpc)</li>
-            <li>Maven</li>
-            <li>Erlang / rebar3</li>
-            <li>ZeroMQ</li>
-            <li>Consistent hashing</li>
-            <li>Python (tests)</li>
-          </ul>
-        </template>
-      </article>
+              <h4>Stack</h4>
+              <ul class="tags">
+                <li>Java 17</li>
+                <li>Erlang / rebar3</li>
+                <li>gRPC + protobuf</li>
+                <li>RxJava (rx3grpc)</li>
+                <li>Raft</li>
+                <li>CRDTs (LWW-map)</li>
+                <li>Gossip / Cyclon</li>
+                <li>ZeroMQ</li>
+                <li>Consistent hashing</li>
+                <li>Maven</li>
+                <li>Python (tests)</li>
+              </ul>
+            </template>
+          </article>
 
-      <!-- ASCN / AirTrail on GKE -->
-      <article class="card" data-project="airtrail-gke" tabindex="0" role="button" aria-label="Open details for AirTrail on GKE">
-        <div class="card-head">
-          <h3>AirTrail on GKE</h3>
-          <div class="badges">
-            <span class="grade" title="Final university grade">17.5/20</span>
-            <span class="status status-live">Cloud &amp; DevOps</span>
-          </div>
-        </div>
-        <p class="card-desc">
-          Fully automated deployment and optimization of <strong>AirTrail</strong> (an
-          open-source flight-tracking app) on Google Kubernetes Engine. Ansible playbooks
-          spin the whole cluster up and down, an HPA scales the app under load, and Locust
-          benchmarks with up to 500 concurrent users measure the difference.
-        </p>
-        <ul class="tags">
-          <li>Kubernetes / GKE</li>
-          <li>Ansible</li>
-          <li>Google Cloud</li>
-          <li>Locust</li>
-          <li>PostgreSQL</li>
-          <li>Docker</li>
-        </ul>
-        <div class="card-foot">
-          <span class="read-more">Read more →</span>
-          <a class="code-link" href="https://github.com/ASCN-UM/GrupoTP-17" target="_blank" rel="noopener">View code ↗</a>
-        </div>
+          <!-- ascn -->
+          <article class="card" data-project="airtrail-gke" tabindex="0" role="button"
+            aria-label="Open details for AirTrail on GKE">
+            <div class="card-head">
+              <h3>AirTrail on GKE</h3>
+              <div class="badges">
+                <span class="grade" title="Final university grade">17.5/20</span>
+                <span class="status status-live">Cloud &amp; DevOps</span>
+              </div>
+            </div>
+            <p class="card-desc">
+              Fully automated deployment and optimization of <strong>AirTrail</strong> (an
+              open-source flight-tracking app) on Google Kubernetes Engine. Ansible playbooks
+              spin the whole cluster up and down, an HPA scales the app under load, and Locust
+              benchmarks with up to 500 concurrent users measure the difference.
+            </p>
+            <ul class="tags">
+              <li>Kubernetes / GKE</li>
+              <li>Ansible</li>
+              <li>Google Cloud</li>
+              <li>Locust</li>
+              <li>PostgreSQL</li>
+              <li>Docker</li>
+            </ul>
+            <div class="card-foot">
+              <span class="read-more">Read more →</span>
+              <a class="code-link" href="https://github.com/ASCN-UM/GrupoTP-17" target="_blank" rel="noopener">View code
+                ↗</a>
+            </div>
 
-        <template class="detail">
-          <p class="detail-lead">
-            A cloud engineering project (team of 5) built around AirTrail, an open-source
-            SvelteKit + PostgreSQL app for tracking personal flights. The goal: install it
-            on Google Cloud with zero manual steps, find its performance bottlenecks under
-            load, then fix them with autoscaling, and prove the fix with before/after
-            benchmarks.
-          </p>
-          <p class="grade-note">Final university grade: <strong>17.5/20</strong></p>
+            <template class="detail">
+              <p class="detail-lead">
+                A cloud engineering project built around AirTrail, an open-source
+                SvelteKit + PostgreSQL app for tracking personal flights. The goal: install it
+                on Google Cloud with zero manual steps, find its performance bottlenecks under
+                load, then fix them with autoscaling, and prove the fix with before/after
+                benchmarks.
+              </p>
+              <p class="grade-note">Final university grade: <strong>17.5/20</strong></p>
 
-          <h4>Architecture</h4>
-          <pre class="diagram">┌─────────────────────────────────────────────┐
+              <h4>Architecture</h4>
+              <pre class="diagram">┌─────────────────────────────────────────────┐
 │         Ansible Playbooks (automation)      │
 │  gke-cluster-create · airtrail-deploy       │
 │  airtrail-undeploy · gke-cluster-destroy    │
@@ -349,92 +393,108 @@ skills/
               Locust VM on GCP
          (login · list flights · save+delete)</pre>
 
-          <h4>Automated install</h4>
-          <ul class="detail-list">
-            <li><strong>One-command deploy</strong>: Ansible playbooks (GCP + Kubernetes modules) create the GKE cluster, deploy PostgreSQL and AirTrail, and tear everything down again, with configuration exposed as variables.</li>
-            <li><strong>LoadBalancer Service</strong>: chosen over NodePort to lean on the cloud provider's load balancing and IP management; the app's <code>ORIGIN</code> is derived from the assigned IP to avoid cross-site POST rejections.</li>
-            <li><strong>Health-gated steps</strong>: each stage waits for the previous one (e.g. <code>pg_isready</code> before the app starts talking to the database).</li>
-          </ul>
+              <h4>Automated install</h4>
+              <ul class="detail-list">
+                <li><strong>One-command deploy</strong>: Ansible playbooks (GCP + Kubernetes modules) create the GKE
+                  cluster, deploy PostgreSQL and AirTrail, and tear everything down again, with configuration exposed as
+                  variables.</li>
+                <li><strong>LoadBalancer Service</strong>: chosen over NodePort to lean on the cloud provider's load
+                  balancing and IP management; the app's <code>ORIGIN</code> is derived from the assigned IP to avoid
+                  cross-site POST rejections.</li>
+                <li><strong>Health-gated steps</strong>: each stage waits for the previous one (e.g.
+                  <code>pg_isready</code> before the app starts talking to the database).
+                </li>
+              </ul>
 
-          <h4>Benchmarking &amp; optimization</h4>
-          <ul class="detail-list">
-            <li><strong>Locust load tests</strong>: a weighted user scenario (login, listing flights, write-heavy save/delete) run from a dedicated GCP VM at 50, 200 and 500 concurrent users.</li>
-            <li><strong>Baseline findings</strong>: a single app instance hit 21% request failures at 200 users and 36% at 500, with steadily climbing latency.</li>
-            <li><strong>Fix</strong>: a Horizontal Pod Autoscaler (2–5 replicas, scaling at 60% CPU) plus GKE node autoscaling, with tuned CPU/memory requests and limits.</li>
-            <li><strong>Result</strong>: at 200 users, failures dropped from 21% to 4% and latency roughly halved; the minimum of 2 replicas also removed the single point of failure.</li>
-            <li><strong>Monitoring</strong>: Google Cloud dashboards (per-component CPU, memory, bandwidth) combined with Locust's live latency/failure charts.</li>
-          </ul>
+              <h4>Benchmarking &amp; optimization</h4>
+              <ul class="detail-list">
+                <li><strong>Locust load tests</strong>: a weighted user scenario (login, listing flights, write-heavy
+                  save/delete) run from a dedicated GCP VM at 50, 200 and 500 concurrent users.</li>
+                <li><strong>Baseline findings</strong>: a single app instance hit 21% request failures at 200 users and
+                  36% at 500, with steadily climbing latency.</li>
+                <li><strong>Fix</strong>: a Horizontal Pod Autoscaler (2–5 replicas, scaling at 60% CPU) plus GKE node
+                  autoscaling, with tuned CPU/memory requests and limits.</li>
+                <li><strong>Result</strong>: at 200 users, failures dropped from 21% to 4% and latency roughly halved;
+                  the minimum of 2 replicas also removed the single point of failure.</li>
+                <li><strong>Monitoring</strong>: Google Cloud dashboards (per-component CPU, memory, bandwidth) combined
+                  with Locust's live latency/failure charts.</li>
+              </ul>
 
-          <h4>Stack</h4>
-          <ul class="tags">
-            <li>Google Kubernetes Engine</li>
-            <li>Ansible</li>
-            <li>Kubernetes HPA</li>
-            <li>Node autoscaling</li>
-            <li>Locust (Python)</li>
-            <li>PostgreSQL</li>
-            <li>Docker</li>
-            <li>Vagrant</li>
-          </ul>
-        </template>
-      </article>
+              <h4>Stack</h4>
+              <ul class="tags">
+                <li>Google Kubernetes Engine</li>
+                <li>Ansible</li>
+                <li>Kubernetes HPA</li>
+                <li>Node autoscaling</li>
+                <li>Locust (Python)</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>Vagrant</li>
+              </ul>
+            </template>
+          </article>
 
-      <!-- xicochain -->
-      <article class="card" data-project="xicochain" tabindex="0" role="button" aria-label="Open details for xicochain">
-        <div class="card-head">
-          <h3>xicochain</h3>
-          <span class="status status-wip">In development</span>
-        </div>
-        <p class="card-desc">
-          A passion project, I wanted to learn Rust and build my own blockchain
-          entirely from scratch. No frameworks, no shortcuts: just me figuring out how
-          a chain really works underneath the abstractions, one piece at a time.
-          Early days, and evolving.
-        </p>
-        <ul class="tags">
-          <li>Rust</li>
-          <li>Blockchain</li>
-          <li>Cryptography</li>
-          <li>Systems</li>
-        </ul>
-        <div class="card-foot">
-          <span class="read-more">Read more →</span>
-          <a class="code-link" href="https://github.com/FranciscoLopes8/xicochain" target="_blank" rel="noopener">View code ↗</a>
-        </div>
+          <!-- xicochain -->
+          <article class="card" data-project="xicochain" tabindex="0" role="button"
+            aria-label="Open details for xicochain">
+            <div class="card-head">
+              <h3>xicochain</h3>
+              <span class="status status-wip">In development</span>
+            </div>
+            <p class="card-desc">
+              A passion project, I wanted to learn Rust and build my own blockchain
+              entirely from scratch. No frameworks, no shortcuts: just me figuring out how
+              a chain really works underneath the abstractions, one piece at a time.
+              Early days, and evolving.
+            </p>
+            <ul class="tags">
+              <li>Rust</li>
+              <li>Blockchain</li>
+              <li>Cryptography</li>
+              <li>Systems</li>
+            </ul>
+            <div class="card-foot">
+              <span class="read-more">Read more →</span>
+              <a class="code-link" href="https://github.com/FranciscoLopes8/xicochain" target="_blank"
+                rel="noopener">View code ↗</a>
+            </div>
 
-        <template class="detail">
-          <p class="detail-lead">
-            xicochain is a passion project. I wanted to learn Rust properly and build my
-            own blockchain from scratch, no frameworks to hide behind, so the goal is to
-            assemble every piece of the chain by hand and genuinely understand how blocks,
-            hashing, consensus and the peer-to-peer layer fit together. It's as much about
-            the learning as the result.
-          </p>
+            <template class="detail">
+              <p class="detail-lead">
+                xicochain is a passion project. I wanted to learn Rust properly and build my
+                own blockchain from scratch, no frameworks to hide behind, so the goal is to
+                assemble every piece of the chain by hand and genuinely understand how blocks,
+                hashing, consensus and the peer-to-peer layer fit together. It's as much about
+                the learning as the result.
+              </p>
 
 
-          <h4>What it explores</h4>
-          <ul class="detail-list">
-            <li><strong>Blocks &amp; hashing</strong>: block structure, linking blocks by cryptographic hash into an append-only chain.</li>
-            <li><strong>Consensus</strong>: proof-of-work style validation and chain-selection rules.</li>
-            <li><strong>Transactions &amp; state</strong>: modelling transactions and the ledger state they mutate.</li>
-            <li><strong>Networking</strong>: a peer-to-peer layer for propagating blocks and transactions between nodes.</li>
-          </ul>
+              <h4>What it explores</h4>
+              <ul class="detail-list">
+                <li><strong>Blocks &amp; hashing</strong>: block structure, linking blocks by cryptographic hash into an
+                  append-only chain.</li>
+                <li><strong>Consensus</strong>: proof-of-work style validation and chain-selection rules.</li>
+                <li><strong>Transactions &amp; state</strong>: modelling transactions and the ledger state they mutate.
+                </li>
+                <li><strong>Networking</strong>: a peer-to-peer layer for propagating blocks and transactions between
+                  nodes.</li>
+              </ul>
 
-          <h4>Why Rust</h4>
-          <p>
-            I picked Rust for xicochain partly to learn it properly, 
-            and partly because a blockchain is a good excuse to: 
-            shared mutable state across a p2p network is exactly where you want the compiler arguing with you.
-          </p>
+              <h4>Why Rust</h4>
+              <p>
+                I picked Rust for xicochain partly to learn it properly,
+                and partly because a blockchain is a good excuse to:
+                shared mutable state across a p2p network is exactly where you want the compiler arguing with you.
+              </p>
 
-          <h4>Stack</h4>
-          <ul class="tags">
-            <li>Rust</li>
-            <li>Cargo</li>
-            <li>Cryptographic hashing</li>
-          </ul>
-        </template>
-      </article>
+              <h4>Stack</h4>
+              <ul class="tags">
+                <li>Rust</li>
+                <li>Cargo</li>
+                <li>Cryptographic hashing</li>
+              </ul>
+            </template>
+          </article>
 
         </div><!-- /carousel-stage -->
 
@@ -449,16 +509,16 @@ skills/
     <!-- contact -->
     <section id="contact" class="contact">
       <p class="projects-eyebrow">Get in touch</p>
-      <h2 class="projects-title">Let's build something <span class="nowrap">that has to work.</span></h2>
+      <h2 class="projects-title">Let's build something <span class="nowrap">together.</span></h2>
       <p class="contact-text">
         Open to internships, junior roles and interesting problems.
-        The fastest way to reach me is email.
       </p>
       <div class="contact-actions">
         <a class="btn btn-primary" href="mailto:franciscodl2004@gmail.com">Email me</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/francisco-lopes-6837162b9/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/francisco-lopes-6837162b9/" target="_blank"
+          rel="noopener">LinkedIn ↗</a>
         <a class="btn btn-ghost" href="https://github.com/FranciscoLopes8" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn btn-ghost" href="resume.pdf" download="Francisco_Lopes_CV.pdf">CV ↓</a>
+        <a class="btn btn-ghost" href="cv.pdf" download="FranciscoLopesCV.pdf">CV ↓</a>
       </div>
     </section>
   </main>
@@ -485,4 +545,5 @@ skills/
 
   <script src="script.js?v=6"></script>
 </body>
+
 </html>

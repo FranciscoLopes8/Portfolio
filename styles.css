@@ -679,6 +679,7 @@ html[data-theme="dark"] .theme-icon-moon {
   color: var(--text-soft);
   font-size: 1.05rem;
   margin-bottom: 24px;
+  text-align: justify;
 }
 .modal-body h4 {
   font-family: "JetBrains Mono", monospace;
